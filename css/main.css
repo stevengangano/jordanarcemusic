@@ -1,7 +1,3 @@
-.jordan1{
-  width: 100%;
-}
-
 body {
   background-color: black;
 }
@@ -162,12 +158,13 @@ a{
 
 .news-text{
   line-height: 50px;
+  letter-spacing: 2px;
   text-align: center;
   color: white;
 }
 
 .news{
-  border-top: 1px solid gra;
+  border-top: 1px solid gray;
 }
 
 /*Grid*/
@@ -182,26 +179,67 @@ a{
   background-color: black;
 }
 
+
 .blue-square {
+  position: relative;
+  background-color: #404C72;
   margin: 3px;
   width: 23%;
   height: 300px;
-  background-color: #404C72;
   display: inline-block;
   opacity: 0.5;
 }
 
-.pink-square {
+.feb5-container {
+  position: relative;
+  background-image: url('https://c1.staticflickr.com/1/677/31843257573_b3f44a0c49_n.jpg');
   margin: 3px;
   width: 23%;
   height: 300px;
   display: inline-block;
-  background-color: #FE4C6E;
   opacity: 0.5;
- 
+}
+
+.feb5-overlay {
+  background-color: #404C72;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  opacity: 0.8
+}
+
+***********************************
+
+.pink-square {
+  position: relative;
+  background-color: #FE4C6E;
+  margin: 3px;
+  width: 23%;
+  height: 300px;
+  display: inline-block;
+  opacity: 0.5;
+}
+
+.apr27-container {
+  position: relative;
+  background-image: url('https://c1.staticflickr.com/1/677/31843257573_b3f44a0c49_n.jpg');
+  margin: 3px;
+  width: 23%;
+  height: 300px;
+  display: inline-block;
+  opacity: 0.5;
+}
+
+.pink-square .apr27-overlay {
+    background-color: #FE4C6E;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0.8
 }
 
 .purple-square {
+  position: relative;
   margin: 3px;
   width: 23%;
   height: 300px;
@@ -211,6 +249,7 @@ a{
 }
 
 .maroon-square {
+  position: relative;
   margin: 3px;
   width: 23%;
   height: 300px;
@@ -220,6 +259,7 @@ a{
 }
 
 .green-square {
+  position: relative;
   margin: 3px;
   width: 23%;
   height: 300px;
@@ -228,12 +268,53 @@ a{
   opacity: 0.5;
 }
 
+.transparent-overlay{
+  background-color: transparent;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
 .maroon-square:hover,
 .pink-square:hover,
 .green-square:hover,
 .blue-square:hover,
 .purple-square:hover {
-  opacity: 10.0;
+  opacity: 10.0; 
+}
+
+.blue-square .feb5msg {
+  position: absolute;
+  top: 25%;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  line-height: 300px;
+  visibility: hidden;
+  font-size: 100%;
+  font-weight: bold;
+  color: white;
+}
+
+.feb5:hover .feb5msg {
+  visibility: visible;
+}
+
+.pink-square .apr27msg {
+  position: absolute;
+  top: 25%;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  line-height: 300px;
+  visibility: hidden;
+  font-size: 100%;
+  font-weight: bold;
+  color: white;
+}
+
+.apr27:hover .apr27msg {
+  visibility: visible;
 }
 
 .top-box {
@@ -245,6 +326,9 @@ a{
 }
 
 .nav-text {
+  font-size: 125%;
+  text-align: center;
+  letter-spacing: 2px;
   line-height: 300px; /*same height as div so it is vertically aligned*/
   color: white;
   font-weight: bold;
@@ -319,9 +403,10 @@ a{
   bottom: 5px;
   background-color: black;
 }
+
 .blue-square-shows {
   width: 100%;
-  height: 110px;
+  height: 115px;
   background-color: #404C72;
   opacity: 10.0;
 }
