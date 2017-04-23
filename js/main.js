@@ -32,3 +32,8 @@ $(".carousel").on("touchstart", function(event){
 
 
 });
+
+//stop auto-slide for video carousel
+$(document).ready(function() {      
+   $('.carousel').carousel('pause');
+});

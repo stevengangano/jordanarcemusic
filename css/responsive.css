@@ -101,11 +101,41 @@
 }
 
 @media (max-width: 561px) {
-.maroon-square,
-.pink-square,
-.green-square,
-.blue-square,
-.purple-square {
+.maroon-square-shows,
+.pink-square-shows,
+.green-square-shows,
+.blue-square-shows,
+.purple-square-shows {
       width: 97%;
    }
+}
+
+@media (max-width: 775px) {
+  .maroon-square-shows,
+  .pink-square-shows,
+  .green-square-shows,
+  .blue-square-shows,
+  .purple-square-shows {
+    font-size: 50%;
+  }
+}
+
+@media (max-width: 445px) {
+  .maroon-square-shows,
+  .pink-square-shows,
+  .green-square-shows,
+  .blue-square-shows,
+  .purple-square-shows {
+    font-size: 40%;
+  }
+}
+
+@media (max-width: 374px) {
+  .maroon-square-shows,
+  .pink-square-shows,
+  .green-square-shows,
+  .blue-square-shows,
+  .purple-square-shows {
+    font-size: 30%;
+  }
 }
