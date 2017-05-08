@@ -1,26 +1,43 @@
- html {
- 	height: 100%;
- }
-
-body {
-    background-image: url("../img/about.jpg");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+/*Removes whitespace between navbar and image below*/
+.nav-main {
+    padding: 0;
+    margin: 0;
+    overflow-y: hidden; /*Hides scroll bars for navbar*/
 }
 
-.about-background {
+img.bg {
+  /* Set rules to fill background */
+  min-height: 200%;
+  min-width: 1024px;
+	
+  /* Set up proportionate scaling */
+  width: 100%;
+  height: auto;
+	
+  /* Set up positioning */
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+@media (min-width:775px) {
+	img.bg {
+		position: relative;
+		bottom: 10%;
+	}
+}
+
+.about-me {
 	padding: 25px 30px;
 	border-top: 2px solid #7B2A3B;
 	border-bottom: 2px solid #7B2A3B;
-	margin-top: 47%;
 	background-color: #1F1F22;
 	color: white;
 }
 
-@media (max-width: 775px ) {
-	.about-background {
-		margin-top: 95%;
+@media (min-width: 776px) {
+	.home-button {
+		display: none;
 	}
 }
 

@@ -53,7 +53,6 @@
 	    </div>
   	</nav>
 
-
 <ul class="rslides">
   <li><img src="img/jordanrc3.jpg" alt="" style=""></li>
   <li><img src="img/jordan_rc1.jpg" alt=""></li>
@@ -294,12 +293,20 @@
 	</div>
  </div>
 
+ <footer style="height: 80px; background-color: black; border-top: 1px solid #7B2A3B;">
+	 <ul class="social-icons text-center" style="line-height: 80px;">
+		<a href="https://open.spotify.com/artist/32ZD69vCbq2sctfs9JBVN8" target="_blank"><li><i class="fa fa-spotify" style="font-size: 225%;"></i></li></a>
+		<a href="https://www.youtube.com/user/jordanarcemusic/videos" target="_blank"><li><i class="fa fa-youtube" style="font-size: 225%;"></i></li></a>
+		<a href="https://www.instagram.com/i.jordanphotography/" target="_blank"><li><i class="fa fa-instagram" style="font-size: 225%;"></i></li></a>
+		<a href=""><li><i class="fa fa-twitter" style="font-size: 225%;"></i></li></a>
+	</ul>
+ </footer>
+
 <script src="js/responsiveslides.min.js"></script>
 <script src="js/main.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 
 <?php 
-
 
 $name = $_POST['name'];
 $email = $_POST['email'];;
@@ -315,8 +322,6 @@ mail($recipient, $subject)
 $home_url = 'http://' . $_SERVER['HTTP_HOST'] . dirname($_SERVER['PHP_SELF']) . '/sent.php';
   header('Location: ' . $home_url);
  
- 
-
 ?>
 
 </body>

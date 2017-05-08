@@ -117,10 +117,10 @@
 .blue-square,
 .purple-square {
       width: 97%;
-      height: 180px;
+      height: 110px;
    }
   .nav-text {
-    line-height: 180px;
+    line-height: 110px;
   }
   .top-box {
     margin-top: 25px;
@@ -130,7 +130,7 @@
   }
   .blue-square .feb5msg,
   .pink-square .apr27msg {
-    line-height: 180px;
+    line-height: 110px;
   }
 }
 
