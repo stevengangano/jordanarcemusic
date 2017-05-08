@@ -135,6 +135,16 @@
 }
 
 /*Shows*/
+@media (max-width: 615px) {
+  .maroon-square-shows,
+  .pink-square-shows,
+  .green-square-shows,
+  .blue-square-shows,
+  .purple-square-shows {
+    font-size: 60%;
+  }
+}
+
 @media (max-width: 445px) {
   .maroon-square-shows,
   .pink-square-shows,
