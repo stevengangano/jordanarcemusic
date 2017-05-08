@@ -20,7 +20,7 @@ header ul li {
 }
 
 /*Hamburger menu*/
-#cpBtn{
+#cpBtn {
   background-color: transparent;
   margin-top: 12px;
   float: left;
@@ -44,8 +44,6 @@ header ul li {
   margin: 3px 0px;
   border-radius: 2px;
 }
-
-/*hamburger menu end*/
 
 /*Navbar*/
 .menu-handle {
@@ -132,7 +130,6 @@ nav ul {
   clear: both;
 }
 
-
 nav ul li {
   float: left;
   display: inline-block; /*takes off bullet points and inlines*/
@@ -196,7 +193,6 @@ a{
 }
 
 .feb5-container {
-  /*background-image: url('https://c1.staticflickr.com/1/677/31843257573_b3f44a0c49_n.jpg');*/
   margin: 3px;
   width: 23%;
   height: 300px;
@@ -241,7 +237,6 @@ a{
 
 .apr27-container {
   position: relative;
-  /*background-image: url('https://c1.staticflickr.com/1/677/31843257573_b3f44a0c49_n.jpg');*/
   margin: 3px;
   width: 23%;
   height: 300px;
@@ -319,11 +314,6 @@ a{
   opacity: 10.0; 
 }
 
-
-.top-box {
-  margin-top: 25px;
-}
-
 .bottom-box{
   margin-bottom: 25px;
 }
@@ -355,17 +345,6 @@ a{
   line-height: 50px;
   text-align: center;
   color: #CCCCCC;;
-}
-
-
-/*Music Carousel*/
-
-.song {
-  width: 22%;
-  height: 300px;
-  display: inline-block;
-  background-color: #4C3A50;
-  border: 1px solid white;
 }
 
 /*Videos Bar*/
@@ -459,7 +438,7 @@ a{
 }
 
 
-
+/*Overidden bootstrap styles*/
 #bootstrap-overrides1.carousel-indicators .active,
 #bootstrap-overrides2.carousel-indicators .active {
   background-color: #FE4C6E;
@@ -473,4 +452,67 @@ a{
 #bootstrap-overrides.carousel-inner > .item > img {
   width:auto ;
   height:auto;
+}
+
+/*Slides*/
+.rslides {
+  position: relative;
+  list-style: none;
+  overflow: hidden;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  }
+
+.rslides li {
+  -webkit-backface-visibility: hidden;
+  position: absolute;
+  display: none;
+  width: 100%;
+  left: 0;
+  top: 0;
+  }
+
+.rslides li:first-child {
+  position: relative;
+  display: block;
+  float: left;
+  }
+
+.rslides img {
+  display: block;
+  height: auto;
+  float: left;
+  width: 100%;
+  border: 0;
+  }
+
+/*Contact*/
+.wrapper {
+    background-image: url("../img/about.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.email-button {
+  background-color: #2B343F; /* For browsers that do not support gradients */
+  background-color: -webkit-linear-gradient(left, #475462, #2B343F); /* For Safari 5.1 to 6.0 */
+  background-color: -o-linear-gradient(right, red, yellow); /* For Opera 11.1 to 12.0 */
+  background-color: -moz-linear-gradient(right, red, yellow); /* For Firefox 3.6 to 15 */
+  background-color: linear-gradient(to right, red , yellow); /* Standard syntax */
+}
+
+.email-form {
+  background-color: black; /* For browsers that do not support gradients */
+  background-color: -webkit-linear-gradient(left, black, #171113); /* For Safari 5.1 to 6.0 */
+  background-color: -o-linear-gradient(right, red, yellow); /* For Opera 11.1 to 12.0 */
+  background-color: -moz-linear-gradient(right, red, yellow); /* For Firefox 3.6 to 15 */
+  background-color: linear-gradient(to right, red , yellow); /* Standard syntax */
+}
+
+@media (max-width: 500px) {
+  .contact-image {
+      margin-top: 30%;
+  }
 }

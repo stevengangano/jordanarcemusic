@@ -1,4 +1,4 @@
-/*Navbar start*/
+/*Navbar*/
 @media (max-width: 775px) {
 
     .logo{
@@ -117,16 +117,31 @@
 .blue-square,
 .purple-square {
       width: 97%;
+      height: 180px;
    }
+  .nav-text {
+    line-height: 180px;
+  }
+  .top-box {
+    margin-top: 25px;
+  }
+  .last-box {
+    margin-bottom: 25px;
+  }
+  .blue-square .feb5msg,
+  .pink-square .apr27msg {
+    line-height: 180px;
+  }
 }
 
+/*Shows*/
 @media (max-width: 445px) {
   .maroon-square-shows,
   .pink-square-shows,
   .green-square-shows,
   .blue-square-shows,
   .purple-square-shows {
-    font-size: 40%;
+    font-size: 50%;
   }
 }
 

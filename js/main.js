@@ -37,3 +37,9 @@ $(".carousel").on("touchstart", function(event){
 $(document).ready(function() {      
    $('.carousel').carousel('pause');
 });
+
+//slider slideshow
+
+$(document).ready(function (){
+	$(".rslides").responsiveSlides();
+})
