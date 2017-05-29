@@ -1,0 +1,129 @@
+/*Hamburger menu*/
+#cpBtn {
+  background-color: transparent;
+  margin-top: 12px;
+  float: left;
+  padding: 2px 8px;
+  cursor: pointer;
+  border: 1px solid transparent;
+}
+
+#cpBtn > div.end {
+  width: 10px;
+  height: 2px;
+  background: white;
+  margin: 3px 0px;
+  border-radius: 2px;
+}
+
+#cpBtn > div.mid {
+  width: 15px;
+  height: 2px;
+  background: white;
+  margin: 3px 0px;
+  border-radius: 2px;
+}
+
+/*Navbar*/
+.menu-handle {
+  width: 100%;
+  display: none;
+}
+
+.menu-text{
+  font-size: 15px;
+  font-weight: bold;
+  float: left;
+  padding: 5px;
+  box-sizing: border-box;
+  line-height: 90px;
+}
+
+.logo-handle {
+  width: 100%;
+  display: none;
+}
+
+.logo-text {
+  color:#4C130C;
+  font-size: 15px;
+  font-weight: bold;
+  box-sizing: border-box;
+  line-height: 55px;
+  font-weight: bold;
+  font-family: 'Eczar', serif;
+  font-size: 200%;
+  padding: 5px;
+  text-align: center;
+}
+
+.logo-img-handle {
+  position: relative;
+  right: 17px;
+  width: 100%;
+  display: none;
+}
+
+.logo-img {
+  float: left;
+  padding: 5px;
+  box-sizing: border-box;
+}
+
+.logo{
+  float: left;
+  color: #5C292E;
+  text-align: left;
+  font-weight: bold;
+  font-family: 'Eczar', serif;
+  font-size: 150%;
+  line-height: 5px;
+}
+
+.logo-responsive{
+  height: 80px;
+}
+
+.fa-close.nav-close {
+  display: none;
+}
+
+.nav-main{
+  height: 60px;
+  background: #000000;
+}
+
+.nav-list {
+  line-height: 5px;
+}
+
+nav ul {
+  position: relative;
+  width: 100%;
+  padding: 10px;
+  float: left;
+  -webkit-transition: max-height 0.4s;
+  transition: max-height 0.4s;
+  line-height: 45px;
+  font-family: 'Eczar', serif;
+  clear: both;
+}
+
+nav ul li {
+  float: left;
+  display: inline-block; /*takes off bullet points and inlines*/
+  padding: 20px;
+  font-weight: 500;
+  color: white;
+  letter-spacing: 2px;
+  margin-right: 20px;
+}
+
+nav ul li:hover {
+  color: #FE4C6E;
+}
+
+a{
+  text-decoration: none;
+  color: inherit; /*when hovered it takes color around it*/
+}

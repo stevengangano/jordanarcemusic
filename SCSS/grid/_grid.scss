@@ -1,0 +1,154 @@
+/*Grid*/
+.grid-box {
+  margin-bottom: 15px
+}
+
+.grid {
+  position: relative;
+  bottom: 2px;
+  background-color: black;
+}
+
+.blue-square {
+  position: relative;
+  background-color: #404C72;
+  margin: 3px;
+  width: 23%;
+  height: 300px;
+  display: inline-block;
+}
+
+.feb5-container {
+  margin: 3px;
+  width: 23%;
+  height: 300px;
+  display: inline-block;
+}
+
+.feb5-overlay {
+  background-color: #404C72;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  opacity: 0.8
+}
+
+.blue-square .feb5msg {
+  position: absolute;
+  top: 25%;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  line-height: 300px;
+  visibility: hidden;
+  font-size: 100%;
+  font-weight: bold;
+  color: white;
+}
+
+.feb5:hover .feb5msg {
+  visibility: visible;
+}
+
+/*************************************/
+
+.pink-square {
+  position: relative;
+  background-color: #FE4C6E;
+  margin: 3px;
+  width: 23%;
+  height: 300px;
+  display: inline-block;
+}
+
+.apr27-container {
+  position: relative;
+  margin: 3px;
+  width: 23%;
+  height: 300px;
+  display: inline-block;
+}
+
+.pink-square .apr27-overlay {
+    position: absolute;
+    background-color: #FE4C6E;
+    width: 100%;
+    height: 100%;
+}
+
+.pink-square .apr27msg {
+  position: absolute;
+  top: 25%;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  line-height: 300px;
+  visibility: hidden;
+  font-size: 100%;
+  font-weight: bold;
+  color: white;
+}
+
+.apr27:hover .apr27msg {
+  visibility: visible;
+}
+
+/*************************************/
+
+.purple-square {
+  position: relative;
+  margin: 3px;
+  width: 23%;
+  height: 300px;
+  display: inline-block;
+  background-color: #4C3A50;
+
+}
+
+.maroon-square {
+  position: relative;
+  margin: 3px;
+  width: 23%;
+  height: 300px;
+  display: inline-block;
+  background-color: #6A262B;
+ 
+}
+
+.green-square {
+  position: relative;
+  margin: 3px;
+  width: 23%;
+  height: 300px;
+  display: inline-block;
+  background-color: #0E5A4C;
+
+}
+
+.transparent-overlay{
+  background-color: transparent;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.maroon-square:hover,
+.pink-square:hover,
+.green-square:hover,
+.blue-square:hover,
+.purple-square:hover {
+  opacity: 10.0; 
+}
+
+.bottom-box{
+  margin-bottom: 25px;
+}
+
+.nav-text {
+  font-size: 125%;
+  text-align: center;
+  letter-spacing: 2px;
+  line-height: 300px; /*same height as div so it is vertically aligned*/
+  color: white;
+  font-weight: bold;
+}

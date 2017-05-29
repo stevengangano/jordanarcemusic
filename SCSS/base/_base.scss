@@ -1,0 +1,11 @@
+/*Removes whitespace between navbar and image below*/
+.head,
+.nav-main {
+    padding: 0;
+    margin: 0;
+    overflow-y: hidden; /*Hides scroll bars for navbar*/
+}
+
+body {
+  background-color: black;
+}

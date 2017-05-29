@@ -1,0 +1,15 @@
+/*Overidden bootstrap styles*/
+#bootstrap-overrides1.carousel-indicators .active,
+#bootstrap-overrides2.carousel-indicators .active {
+  background-color: #FE4C6E;
+}
+
+#bootstrap-overrides1.carousel-indicators li,
+#bootstrap-overrides2.carousel-indicators li{
+  border: 1px solid gray;
+}
+
+#bootstrap-overrides.carousel-inner > .item > img {
+  width:auto ;
+  height:auto;
+}
