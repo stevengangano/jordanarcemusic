@@ -7,7 +7,7 @@ if( isset($_POST['n']) && isset($_POST['e']) && isset($_POST['m']) ){
 	$to = "stevengangano@yahoo.com";	
 	$from = $e;
 	$subject = 'Contact Form Message';
-	$message = '<b>Name:</b> '.$n.' <br><b>Email:</b> '.$e.' <p>'.$m.'</p>';
+	$message = '<b>Name:</b> '.$n.' <br><b>Email:</b> '.$e.' <p><b>Message</b>: '.$m.' </p>';
 	$headers = "From: $from\n";
 	$headers .= "MIME-Version: 1.0\n";
 	$headers .= "Content-type: text/html; charset=iso-8859-1\n";
