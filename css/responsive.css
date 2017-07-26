@@ -117,10 +117,10 @@
 .blue-square,
 .purple-square {
       width: 97%;
-      height: 110px;
+      height: 85px;
    }
   .nav-text {
-    line-height: 110px;
+    line-height: 85px;
   }
   .top-box {
     margin-top: 25px;
@@ -130,7 +130,7 @@
   }
   .blue-square .feb5msg,
   .pink-square .apr27msg {
-    line-height: 110px;
+    line-height: 85px;
   }
 }
 
@@ -162,5 +162,25 @@
   .blue-square-shows,
   .purple-square-shows {
     font-size: 30%;
+  }
+}
+
+/*Bars*/
+@media (max-width: 561px) {
+  .news-bar,
+  .music-bar,
+  .videos-bar,
+  .shows-bar,
+  .contact-bar {
+    height: 75px;
+  }
+  
+  .news-text,
+  .music-text,
+  .videos-text,
+  .shows-text,
+  .contact-text {
+    font-size: 75%;
+    line-height: 30px;
   }
 }
