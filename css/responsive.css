@@ -117,10 +117,10 @@
 .blue-square,
 .purple-square {
       width: 97%;
-      height: 85px;
+      height: 200px;
    }
   .nav-text {
-    line-height: 85px;
+    line-height: 200px;
   }
   .top-box {
     margin-top: 25px;
@@ -130,7 +130,7 @@
   }
   .blue-square .feb5msg,
   .pink-square .apr27msg {
-    line-height: 85px;
+    line-height: 200px;
   }
 }
 
@@ -174,7 +174,7 @@
   .contact-bar {
     height: 75px;
   }
-  
+
   .news-text,
   .music-text,
   .videos-text,
