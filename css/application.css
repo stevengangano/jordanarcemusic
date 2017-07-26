@@ -170,7 +170,7 @@ header ul li {
 .news-bar {
   position: relative;
   bottom: 2px;
-  border-top: 2px solid #7B2A3B;
+  border-top: 4px solid #7B2A3B;
   border-bottom: 2px solid #7B2A3B;
   width: 100%;
   height: 100px;
@@ -323,7 +323,7 @@ header ul li {
   position: relative;
   bottom: 5px;
   border-top: 2px solid #7B2A3B;
-  border-bottom: 2px solid #7B2A3B;
+  border-bottom: 3px solid #7B2A3B;
   width: 100%;
   height: 100px;
   background: black; }
@@ -401,7 +401,7 @@ header ul li {
   position: relative;
   bottom: 5px;
   border-top: 2px solid #7B2A3B;
-  border-bottom: 2px solid #7B2A3B;
+  border-bottom: 3px solid #7B2A3B;
   width: 100%;
   height: 100px;
   background: black; }
@@ -414,6 +414,26 @@ header ul li {
   color: #CCCCCC; }
 
 /*Contact*/
+.email-form {
+  position: relative;
+  bottom: 5px; }
+
+.contact-bar {
+  position: relative;
+  bottom: 5px;
+  border-top: 2px solid #7B2A3B;
+  border-bottom: 2px solid #7B2A3B;
+  width: 100%;
+  height: 100px;
+  background: black; }
+
+.contact-text {
+  font-size: 30px;
+  letter-spacing: 2px;
+  line-height: 50px;
+  text-align: center;
+  color: #CCCCCC; }
+
 .social-icons li {
   margin: 0 15px;
   display: inline-block; }
