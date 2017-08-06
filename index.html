@@ -17,6 +17,9 @@
 	 <!-- Optional theme -->
 	 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
 
+	 <!-- Google Fonts -->
+	 <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+
 	 <!-- Jquery MUST BE HERE FOR CAROUSEL TO WORK -->
 	 <script type="text/javascript" src="js/jquery.min.js"></script>
 	
@@ -72,10 +75,13 @@
 		    <ul class="nav-list">
 		      <span><i class="fa fa-close nav-close"></i></span>
 		      <li class="logo">Jordan R.C.</li>
-		      <a href="#news"><li>NEWS</li></a>
-		      <a  class="car" href="#music"><li>MUSIC</li></a>
-		      <a href="#videos"><li>VIDEOS</li></a>
-		      <a href="about.html"><li>BIO</li></a>
+		      <div class="move-right">
+			      <a href="#news"><li>NEWS</li></a>
+			      <a href="#music"><li>MUSIC</li></a>
+			      <a href="#videos"><li>VIDEOS</li></a>
+			      <a href="about.html"><li>BIO</li></a>
+			      <a href="#contact"><li>CONTACT</li></a>
+		      </div>
 		    </ul>
 	    </div>
   	</nav>
@@ -165,8 +171,20 @@
 	<h3 class="text-center"><span class="music-text"> MUSIC </span></h3>
 </div>
 
-<iframe src="https://embed.spotify.com/?uri=spotify%3Aartist%3A32ZD69vCbq2sctfs9JBVN8" width="100%" height="310" frameborder="0" allowtransparency="true"></iframe>
-
+<div class="row" style="position:relative; bottom: 5px;">
+	<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12" style="background-color: #EC4400; margin: 0px; padding:0px;">
+	<div class="soundcloud text-center"> 
+		<i class="fa fa-soundcloud" st aria-hidden="true"></i>
+ 	</div>
+			<iframe width="100%" height="310" scrolling="no" frameborder="0" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/users/24715634&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true" style="position: relative; top: 5px;"></iframe>
+	</div>
+	<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12" style="background-color: #1ED760; margin: 0px; padding: 0px;">
+		<div class="spotify text-center"> 
+			<i class="fa fa-spotify player" aria-hidden="true"></i>
+ 		</div>
+			<iframe src="https://embed.spotify.com/?uri=spotify%3Aartist%3A32ZD69vCbq2sctfs9JBVN8" width="100%" height="310" frameborder="0" allowtransparency="true" style="position: relative; top: 5px;"></iframe>
+	</div>
+</div>
 
 <!-- *********************************VIDEOS****************************** -->
 
@@ -175,7 +193,7 @@
 </div>
 
   	<!-- Carousel -->
-<div class="container-fluid">
+<div class="container-fluid" style="margin: 0px; padding:0px; position: relative; bottom: 5px;">
   <div class="row slider">
     <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
       <div id="myCarousel" class="carousel slide text-center" data-ride="carousel" data-interval="false">
@@ -190,19 +208,19 @@
         <!-- Wrapper for slides -->
         <div class="carousel-inner" role="listbox">
 
-          <div class="item home active">
+          <div class="carousel-vids item home active">
           	<iframe width="100%" height="500" src="https://www.youtube.com/embed/HpYgJcsb7X0" frameborder="0" allowfullscreen></iframe>
           </div>
 
-          <div class="item home">
+          <div class="carousel-vids item home">
             <iframe width="100%" height="500" src="https://www.youtube.com/embed/3dXn3DEnxog" frameborder="0" allowfullscreen></iframe>
           </div>
 
-          <div class="item home">
+          <div class="carousel-vids item home">
            	<iframe width="100%" height="500" src="https://www.youtube.com/embed/JvVKM4QyYXI" frameborder="0" allowfullscreen></iframe>
           </div>
 
-          <div class="item home">
+          <div class="carousel-vids item home">
            	<iframe width="100%" height="500" src="https://www.youtube.com/embed/CZIL9CmF_Ng" frameborder="0" allowfullscreen></iframe>
           </div>
 
@@ -293,14 +311,13 @@
 
 <!-- *********************************Contact****************************** -->
 
-<div class="contact-bar">
+<div class="contact-bar" id="contact">
 	<h3 class="text-center"><span class="contact-text"> Contact </span></h3>
 </div>
 
-  <div class="email-form row">
+  <div class="email-form row" style="margin: 0px; padding: 0px;">
     <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
-
-    	<h5 style="color: white; font-weight: bold; text-align:center; margin-top: 8%;"> CONTACT JORDAN </h5>
+		<h5 style="color: white; font-weight: bold; text-align:center; margin-top: 8%;"> CONTACT JORDAN </h5>
     	<hr style="border: 1px solid gray;">
 
 		<form class="text-center" id="my_form" onsubmit="submitForm(); return false;">
@@ -311,18 +328,16 @@
 		  <p><input cols="40" id="e" placeholder="Email Address" type="email" style="width: 50%; margin-left:3%;" required></p><br>
 
 		  <label for="comment" style="color: white; margin-left:3%;"> MESSAGE <span style="color: red;"> * </span> </label><br><textarea  rows="5" cols="40" id="m" placeholder="write your message here" rows="10" style="margin-left:3%;" required></textarea>
-		  <p><input id="mybtn" type="submit" value="Submit Form" style="margin-left:3%;"> <span id="status"></span></p>
+		  <p class="submitButton" style="margin: 10px 0 15px 0;"><input id="mybtn" class="btn btn-danger btn-sm" type="submit" value="Submit Form" style="margin-left:3%;"> <span id="status"></span></p>
 		</form>
 	</div>
 
-
-
 	<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
-		<img style="float:right; margin-top: 12%; border-radius: 5px;" class="img-responsive" src="img/contact_image.jpg">
+		<img style="float:right; margin-top: 7%; border-radius: 5px;" class="img-responsive" src="img/contact_image.jpg">
 	</div>
  </div>
 
- <footer style="height: 80px; background-color: black; border-top: 1px solid #7B2A3B;">
+ <footer style="position: relative; bottom: 5px; height: 70px; background-color: black; border-top: 1px solid #7B2A3B;">
 	 <ul class="social-icons text-center" style="line-height: 80px;">
 		<a href="https://open.spotify.com/artist/32ZD69vCbq2sctfs9JBVN8" target="_blank"><li><i class="fa fa-spotify" style="font-size: 225%;"></i></li></a>
 		<a href="https://www.youtube.com/user/jordanarcemusic/videos" target="_blank"><li><i class="fa fa-youtube" style="font-size: 225%;"></i></li></a>

@@ -62,7 +62,6 @@
     }
 }
 
-
 @media (max-width: 320px) {
    .navbar-brand.title {
       position: relative;
@@ -86,6 +85,13 @@
       right: 12px;
       width: 55%;
    }
+}
+
+/*Navbar links*/
+@media (min-width: 776px) { 
+  .move-right {
+    float: right;
+  }
 }
 
 /*Gridbox*/
@@ -182,5 +188,21 @@
   .contact-text {
     font-size: 75%;
     line-height: 30px;
+  }
+}
+
+/*Soundcloud and Spotify favicon*/
+@media (max-width: 415px) {
+  .fa.fa-soundcloud,
+  .fa.fa-spotify.player {
+   font-size: 25px;
+   padding-top: 5px;
+  }
+
+/*Contact Form*/
+@media (max-width: 415px) {
+  .submitButton {
+    position: relative;
+    top: 7px;
   }
 }

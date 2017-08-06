@@ -1,5 +1,6 @@
 /*MUSIC BAR*/
 .music-bar{
+  font-family: 'Oswald', sans-serif;
   position: relative;
   bottom: 5px;
   border-top: 2px solid #7B2A3B;
@@ -15,4 +16,10 @@
   line-height: 50px;
   text-align: center;
   color: #CCCCCC;;
+}
+
+.fa.fa-soundcloud,
+.fa.fa-spotify.player {
+  font-size: 60px;
+  padding-top: 5px;
 }

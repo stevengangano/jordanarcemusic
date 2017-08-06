@@ -1,6 +1,7 @@
 /*Videos Bar*/
 
 .videos-bar{
+  font-family: 'Oswald', sans-serif;
   position: relative;
   bottom: 5px;
   border-top: 2px solid #7B2A3B;
@@ -17,3 +18,8 @@
   text-align: center;
   color: #CCCCCC;;
 }
+
+.carousel-vids {
+  border-bottom: 75px solid black;
+}
+
