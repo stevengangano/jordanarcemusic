@@ -33,7 +33,7 @@ $(".carousel").on("touchstart", function(event){
 
 });
 
-//stop auto-slide for video carousel
+// stop auto-slide for video carousel
 $(document).ready(function() {      
    $('.carousel').carousel('pause');
 });
@@ -51,4 +51,6 @@ $(".rslides").responsiveSlides({
   pause: true,           // Boolean: Pause on hover, true or false
   pauseControls: true   // Boolean: Pause when hovering controls, true or false 
 });
+
+
 

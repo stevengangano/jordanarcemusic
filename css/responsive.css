@@ -198,11 +198,28 @@
    font-size: 25px;
    padding-top: 5px;
   }
+  .spotify-player {
+    height: 500px;
+  }
+}
+
+/*Soundcloud and Spotify player*/
+@media (max-width: 998px) {
+  .spotify-player {
+    height: 310px;
+  }
+}
 
 /*Contact Form*/
 @media (max-width: 415px) {
   .submitButton {
     position: relative;
     top: 7px;
+  }
+}
+
+@media (max-width: 415px) {
+  #news {
+    display: none;
   }
 }
