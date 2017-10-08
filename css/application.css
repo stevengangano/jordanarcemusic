@@ -441,6 +441,12 @@ header ul li {
   height: 100px;
   background: black; }
 
+.videos-carousel {
+  position: relative;
+  margin: 0px;
+  padding: 0px;
+  bottom: 5px; }
+
 .videos-text {
   font-size: 30px;
   letter-spacing: 2px;
@@ -454,7 +460,9 @@ header ul li {
 /*Contact*/
 .email-form {
   position: relative;
-  bottom: 5px; }
+  bottom: 5px;
+  margin: 0px;
+  padding: 0px; }
 
 .contact-bar {
   font-family: 'Oswald', sans-serif;
@@ -465,6 +473,12 @@ header ul li {
   width: 100%;
   height: 100px;
   background: black; }
+
+.contact-jordan {
+  color: white;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 8%; }
 
 .contact-text {
   font-size: 30px;
@@ -478,7 +492,7 @@ header ul li {
   margin: 3% 0 0 3%; }
 
 #mybtn {
-  margin-left: 3%; }
+  margin: 1% 0 1.5% 3%; }
 
 .email-button {
   background-color: #2B343F;
@@ -556,6 +570,12 @@ footer {
 .social-icons li {
   margin: 0 15px;
   display: inline-block; }
+
+.fa.fa-spotify.footer,
+.fa.fa-youtube.footer,
+.fa.fa-instagram.footer,
+.fa.fa-twitter.footer {
+  font-size: 225%; }
 
 /*Overidden bootstrap styles*/
 #bootstrap-overrides1.carousel-indicators .active,

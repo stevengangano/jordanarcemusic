@@ -20,6 +20,13 @@ img.bg {
   left: 0;
 }
 
+.fa.fa-spotify.footer,
+.fa.fa-youtube.footer,
+.fa.fa-instagram.footer,
+.fa.fa-twitter.footer {
+	font-size: 225%;
+}
+
 @media (min-width:775px) {
 	img.bg {
 		position: relative;
@@ -40,4 +47,6 @@ img.bg {
 		display: none;
 	}
 }
+
+
 

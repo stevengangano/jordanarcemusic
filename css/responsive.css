@@ -22,7 +22,7 @@
     float: left;
     position: relative;
     background: black;
-    height: 33%;
+    height: 40%;
     width: 25%;
     position: fixed;
     transform: translateX(-100%); /*hides responsive navbar*/
