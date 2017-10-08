@@ -10,15 +10,47 @@
   background: black;
 }
 
-.shows-text{
+
+.shows-text {
   font-size: 30px;
   letter-spacing: 2px;
   line-height: 50px;
   text-align: center;
-  color: #CCCCCC;
+  color: #CCCCCC;;
 }
 
 /*Shows*/
+
+.shows-month {
+  line-height:115px; 
+  margin-left: 5%; 
+  font-size: 100%; 
+  color: white;
+}
+
+.shows-day {
+  line-height:115px; 
+  font-size: 150%; 
+  font-weight:bold; 
+  color: white;
+}
+
+.shows-city {
+  line-height:115px; 
+  font-size: 150%; 
+  font-weight: bold; 
+  color: white; 
+  margin-left: 2%;
+}
+
+.shows-venue {
+  line-height:115px; 
+  margin-left: 2%; 
+  font-size: 150%; 
+  font-style: italic; 
+  color: #8C838E;
+}
+
 .shows{
   position: relative;
   bottom: 5px;

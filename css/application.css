@@ -361,6 +361,32 @@ header ul li {
   color: #CCCCCC; }
 
 /*Shows*/
+.shows-month {
+  line-height: 115px;
+  margin-left: 5%;
+  font-size: 100%;
+  color: white; }
+
+.shows-day {
+  line-height: 115px;
+  font-size: 150%;
+  font-weight: bold;
+  color: white; }
+
+.shows-city {
+  line-height: 115px;
+  font-size: 150%;
+  font-weight: bold;
+  color: white;
+  margin-left: 2%; }
+
+.shows-venue {
+  line-height: 115px;
+  margin-left: 2%;
+  font-size: 150%;
+  font-style: italic;
+  color: #8C838E; }
+
 .shows {
   position: relative;
   bottom: 5px;
@@ -447,9 +473,12 @@ header ul li {
   text-align: center;
   color: #CCCCCC; }
 
-.social-icons li {
-  margin: 0 15px;
-  display: inline-block; }
+.contact-fields {
+  color: white;
+  margin: 3% 0 0 3%; }
+
+#mybtn {
+  margin-left: 3%; }
 
 .email-button {
   background-color: #2B343F;
@@ -474,6 +503,11 @@ header ul li {
   /* For Firefox 3.6 to 15 */
   background-color: linear-gradient(to right, red, yellow);
   /* Standard syntax */ }
+
+.contact-image {
+  float: right;
+  margin-top: 7%;
+  border-radius: 5px; }
 
 /*Removes whitespace between navbar and image below*/
 .nav-main {
@@ -508,6 +542,21 @@ img.bg {
 @media (min-width: 776px) {
   .home-button {
     display: none; } }
+footer {
+  position: relative;
+  bottom: 5px;
+  height: 70px;
+  background-color: black;
+  border-top: 1px solid #7B2A3B; }
+
+.social-icons {
+  line-height: 80px;
+  text-align: center; }
+
+.social-icons li {
+  margin: 0 15px;
+  display: inline-block; }
+
 /*Overidden bootstrap styles*/
 #bootstrap-overrides1.carousel-indicators .active,
 #bootstrap-overrides2.carousel-indicators .active {

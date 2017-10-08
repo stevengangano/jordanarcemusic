@@ -1,0 +1,16 @@
+footer {
+  position: relative;
+  bottom: 5px;
+  height: 70px;
+  background-color: black;
+  border-top: 1px solid #7B2A3B; }
+
+.social-icons {
+  line-height: 80px;
+  text-align: center; }
+
+.social-icons li {
+  margin: 0 15px;
+  display: inline-block; }
+
+/*# sourceMappingURL=footer.css.map */

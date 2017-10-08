@@ -220,6 +220,6 @@
 
 @media (max-width: 415px) {
   #news {
-    display: none;
+    /*display: none;*/
   }
 }

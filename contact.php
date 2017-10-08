@@ -4,7 +4,7 @@ if( isset($_POST['n']) && isset($_POST['e']) && isset($_POST['m']) ){
 
 	$e = $_POST['e'];
 	$m = nl2br($_POST['m']);
-	$to = "stevengangano@yahoo.com";	
+	$to = "jordanucsd@gmail.com";	
 	$from = $e;
 	$subject = 'Contact Form Message';
 	$message = '<b>Name:</b> '.$n.' <br><b>Email:</b> '.$e.' <p><b>Message</b>: '.$m.' </p>';

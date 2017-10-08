@@ -1,351 +1,90 @@
 <!DOCTYPE html>
-<html>
+<html class="one" ng-app="myApp">
 <head>
-	<title>Jordan R.C.</title>
-	<link rel="stylesheet" href="css/main.css" />
-	<link rel="stylesheet" href="css/application.css" />
-	<link rel="stylesheet" href="css/responsive.css" />
-	<link rel="stylesheet" href="css/animate.min.css" />
-	<!-- Font Awesome -->
-  	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
 
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> Jordan Music </title>
 
-  	<!-- Latest compiled and minified CSS -->
-  	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/main.css" />
+  <link rel="stylesheet" href="css/application.css" />
+  <link rel="stylesheet" href="css/responsive.css" />
+  <link rel="stylesheet" href="css/animate.min.css" />
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
 
-	 <!-- Optional theme -->
-	 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-	 <!-- Google Fonts -->
-	 <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+  <base href="/"/>
 
-	 <!-- Jquery MUST BE HERE FOR CAROUSEL TO WORK -->
-	 <script type="text/javascript" src="js/jquery.min.js"></script>
-	
-	<!-- Javascript for contact form -->
-	<script>
-	function _(id){ return document.getElementById(id); }
-	function submitForm(){
-		_("mybtn").disabled = true;
-		_("status").innerHTML = 'please wait ...';
-		var formdata = new FormData();
-		formdata.append( "n", _("n").value );
-		formdata.append( "e", _("e").value );
-		formdata.append( "m", _("m").value );
-		var ajax = new XMLHttpRequest();
-		ajax.open( "POST", "contact.php" );
-		ajax.onreadystatechange = function() {
-			if(ajax.readyState == 4 && ajax.status == 200) {
-				if(ajax.responseText == "success"){
-					_("my_form").innerHTML = '<h2>Thanks '+_("n").value+', your message has been sent.</h2>';
-				} else {
-					_("status").innerHTML = ajax.responseText;
-					_("mybtn").disabled = false;
-				}
-			}
-		}
-		ajax.send( formdata );
-	}
-	</script>
+
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+ <!-- Optional theme -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
+
+   <!-- Google Fonts -->
+   <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+
+   <!-- Jquery MUST BE HERE FOR CAROUSEL TO WORK -->
+   <script type="text/javascript" src="js/jquery.min.js"></script>
+
+  <!-- Angular CDN -->
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular-route.min.js"></script>
+
+    <!-- Javascript for contact form -->
+  <script>
+  function _(id){ return document.getElementById(id); }
+  function submitForm(){
+    _("mybtn").disabled = true;
+    _("status").innerHTML = 'please wait ...';
+    var formdata = new FormData();
+    formdata.append( "n", _("n").value );
+    formdata.append( "e", _("e").value );
+    formdata.append( "m", _("m").value );
+    var ajax = new XMLHttpRequest();
+    ajax.open( "POST", "contact.php" );
+    ajax.onreadystatechange = function() {
+      if(ajax.readyState == 4 && ajax.status == 200) {
+        if(ajax.responseText == "success"){
+          _("my_form").innerHTML = '<h2>Thanks '+_("n").value+', your message has been sent.</h2>';
+        } else {
+          _("status").innerHTML = ajax.responseText;
+          _("mybtn").disabled = false;
+        }
+      }
+    }
+    ajax.send( formdata );
+  }
+  </script>
+
 
 </head>
 
-<body>
+<body> 
 
-	<header class="head text-right">
-		<ul>
-			<a href="https://open.spotify.com/artist/32ZD69vCbq2sctfs9JBVN8" target="_blank"><li><i class="fa fa-spotify"></i></li></a>
-			<a href="https://www.youtube.com/user/jordanarcemusic/videos" target="_blank"><li><i class="fa fa-youtube"></i></li></a>
-			<a href="https://www.instagram.com/i.jordanphotography/" target="_blank"><li><i class="fa fa-instagram"></i></li></a>
-			<a href=""><li><i class="fa fa-twitter"></i></li></a>
-		</ul>
-	</header>
+  <div ng-view></div>
 
-	<nav>
-	    <div class="nav-main">
-		    <div class="menu-handle poop">
-		      <span class="menu-text"><a id="cpBtn">
-		        <div class="end"></div>
-		        <div class="mid"></div>
-		        <div class="end"></div>
-		      </a></span>
-		      <div class="logo-handle"><span class="logo-text"> Jordan R.C. </span> </div>
-		    </div>
-		    <ul class="nav-list">
-		      <span><i class="fa fa-close nav-close"></i></span>
-		      <li class="logo">Jordan R.C.</li>
-		      <div class="move-right">
-			      <a href="#news"><li>NEWS</li></a>
-			      <a href="#music"><li>MUSIC</li></a>
-			      <a href="#videos"><li>VIDEOS</li></a>
-			      <a href="about.html"><li>BIO</li></a>
-			      <a href="#contact"><li>CONTACT</li></a>
-		      </div>
-		    </ul>
-	    </div>
-  	</nav>
+<!-- Angular Routing -->
+<script>
+var myApp=angular.module('myApp',['ngRoute'])
 
-<!-- Slideshow -->
-<ul class="rslides">
-  <li><img src="img/jordanrc1.jpg" alt=""></li>
-  <li><img src="img/jordanrc2.jpg" alt=""></li>
-  <li><img src="img/jordanrc3.jpg" alt=""></li>
-  <li><img src="img/jordanrc4.jpg" alt=""></li>
-</ul>
+myApp.config(function ($routeProvider, $locationProvider) {
 
-<div class="news-bar" id="news">
-	<h3 class="text-center"><span class="news-text"> NEWS</span></h3>
-</div>
+  $routeProvider
 
-<section id="news">
-	<div class="container-fluid" style='background-color: black;'>
-	  <div class="row">
-	    <div class="col-xs-12 col-sm-12 col-md-12
-	     col-lg-12 text-center grid">
-	      <a href="">
-	      	<div class="blue-square feb5-container top-box feb5">
-	      		<div class="feb5-overlay">
-		      		<span class="nav-text">5 FEB</span>
-		      		<span class="feb5msg">Watch my show at SF State at 5pm!</span>
-		      	</div>
-	      	</div>
-	      </a>
-	      <a href="">
-	      	<div class="pink-square">
-	      		<div class="transparent-overlay">
-		      		<span class="nav-text">14 FEB</span>
-		      	</div>
-	      	</div>
-	      </a>
-	      <a href="">
-	      	<div class="purple-square">
-	      		<div class="transparent-overlay">
-	      			<span class="nav-text">9 MAR</span>
-	      		</div>
-	      	</div>
-	      </a>
-	      <a href="">
-	      	<div class="maroon-square">
-	      		<div class="transparent-overlay">
-	      			<span class="nav-text">28 MAR</span>
-	      		</div>
-	      	</div>
-	      </a>
-	      <a href="">
-	      	<div class="green-square">
-	      		<div class="transparent-overlay">
-	      			<span class="nav-text">2 APR</span>
-	      		</div>
-	      	</div>
-	      </a>
-	      <a href="">
-	      	<div class="blue-square">
-	      		<div class="transparent-overlay">
-	      			<span class="nav-text">18 APR</span>
-	      		</div>
-	      	</div>
-	      </a>
-	      <a href="">
-	      	<div class="pink-square apr27-container apr27">
-	      		<div class="apr27-overlay">
-	      			<span class="nav-text">27 APR</span>
-	      			<span class="apr27msg">Watch my show at Neck of the Woods at 8:30pm!</span>
-	      		</div>
-	      	</div>
-	      </a>
-	      <a href="">
-	      	<div class="green-square last-box">
-	      		<div class="transparent-overlay">
-	      			<span class="nav-text">8 MAY</span>
-	      		</div>
-	      	</div>
-	      </a>
-	    </div>
-	  </div>  
-	</div>
-</section>
+  .when ('/', {
+    templateUrl: 'pages/home.html'
+  })
+  .when ('/about', {
+    templateUrl: 'pages/about.html'
+  })
 
-<!-- *********************************MUSIC****************************** -->
+ $locationProvider.html5Mode(true);
 
-<div class="music-bar" id="music">
-	<h3 class="text-center"><span class="music-text"> MUSIC </span></h3>
-</div>
+})
 
-<div class="row" style="position:relative; bottom: 5px;">
-	<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12" style="background-color: #EC4400; margin: 0px; padding:0px;">
-	<div class="soundcloud text-center"> 
-		<i class="fa fa-soundcloud" st aria-hidden="true"></i>
- 	</div>
-			<iframe class="soundcloud-player" style="position: relative; top: 5px;" width="100%" height="445" scrolling="no" frameborder="0" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/users/24715634&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true" ></iframe>
-	</div>
-	<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12" style="background-color: #1ED760; margin: 0px; padding: 0px;">
-		<div class="spotify text-center"> 
-			<i class="fa fa-spotify player" aria-hidden="true"></i>
- 		</div>
-			<iframe class="spotify-player" src="https://embed.spotify.com/?uri=spotify%3Aartist%3A32ZD69vCbq2sctfs9JBVN8" width="100%" height="445" frameborder="0" allowtransparency="true" style="position: relative; top: 5px;"></iframe>
-	</div>
-</div>
-
-<!-- *********************************VIDEOS****************************** -->
-
-<div class="videos-bar" id="videos">
-	<h3 class="text-center"><span class="videos-text"> VIDEOS </span></h3>
-</div>
-
-  	<!-- Carousel -->
-<div class="container-fluid" style="margin: 0px; padding:0px; position: relative; bottom: 5px;">
-  <div class="row slider">
-    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-      <div id="myCarousel" class="carousel slide text-center" data-ride="carousel" data-interval="false">
-        <!-- Indicators -->
-        <ol id="bootstrap-overrides2" class="carousel-indicators text-center">
-          <li data-target="#myCarousel" data-slide-to="0" class="active text-center"></li>
-          <li data-target="#myCarousel" data-slide-to="1"></li>
-          <li data-target="#myCarousel" data-slide-to="2"></li>
-          <li data-target="#myCarousel" data-slide-to="3"></li>
-        </ol>
-
-        <!-- Wrapper for slides -->
-        <div class="carousel-inner" role="listbox">
-
-          <div class="carousel-vids item home active">
-          	<iframe width="100%" height="500" src="https://www.youtube.com/embed/HpYgJcsb7X0" frameborder="0" allowfullscreen></iframe>
-          </div>
-
-          <div class="carousel-vids item home">
-            <iframe width="100%" height="500" src="https://www.youtube.com/embed/3dXn3DEnxog" frameborder="0" allowfullscreen></iframe>
-          </div>
-
-          <div class="carousel-vids item home">
-           	<iframe width="100%" height="500" src="https://www.youtube.com/embed/JvVKM4QyYXI" frameborder="0" allowfullscreen></iframe>
-          </div>
-
-          <div class="carousel-vids item home">
-           	<iframe width="100%" height="500" src="https://www.youtube.com/embed/CZIL9CmF_Ng" frameborder="0" allowfullscreen></iframe>
-          </div>
-
-        </div> <!-- end carousel-inner -->
-
-        <!-- Controls -->
-  <a class="left carousel-control" href="#myCarousel"  role="button" data-slide="prev">
-    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-    <span class="sr-only">Previous</span>
-  </a>
-  <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
-    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-    <span class="sr-only">Next</span>
-  </a>
-
-      		</div> <!-- end myCarousel -->
-    	</div> <!-- end col -->
-	</div>
-</div>
-<!-- *********************************SHOWS****************************** -->
-
-<div class="shows-bar">
-	<h3 class="text-center"><span class="shows-text"> SHOWS </span></h3>
-</div>
-
-<section class="shows">
-	<div class="container">
-	  <div class="row">
-	    <div class="col-xs-12 col-sm-12 col-md-12
-	     col-lg-12 text-left">
-	      	<div class="blue-square-shows">
-	      		<span class="shows-text" style="line-height:115px; margin-left: 5%; font-size: 100%; color: white;">FEB</span>
-	      		<span class="shows-text" style="line-height:115px; font-size: 150%; font-weight:bold; color: white;">27</span>
-	      		<span class="shows-text" style="line-height:115px; font-size: 150%; font-weight: bold; color: white; margin-left: 2%;">San Francisco,CA</span> 
-	    		<span class="shows-text" style="line-height:115px; margin-left: 2%; font-size: 150%; font-style: italic; color: #8C838E;">Neck of the Woods</span>
-	      	</div>
-	      	<div class="pink-square-shows">
-	      		<span class="shows-text" style="line-height:115px; margin-left: 5%; font-size: 100%; color: white;">APR</span>
-	      		<span class="shows-text" style="line-height:115px; font-size: 150%; font-weight:bold; color: white;">5</span>
-	      		<span class="shows-text" style="line-height:115px; font-size: 150%; font-weight: bold; color: white; margin-left: 2%;">San Francisco,CA</span> 
-	    		<span class="shows-text" style="line-height:115px; margin-left: 2%; font-size: 150%; font-style: italic; color: #8C838E;">Neck of the Woods</span>	      			
-	      	</div>
-	      	<div class="purple-square-shows">
-	      		<span class="shows-text" style="line-height:115px; margin-left: 5%; font-size: 100%; color: white;">APR</span>
-	      		<span class="shows-text" style="line-height:115px; font-size: 150%; font-weight:bold; color: white;">30</span>
-	      		<span class="shows-text" style="line-height:115px; font-size: 150%; font-weight: bold; color: white; margin-left: 2%;">San Francisco,CA</span> 
-	    		<span class="shows-text" style="line-height:115px; margin-left: 2%; font-size: 150%; font-style: italic; color: #8C838E;">Neck of the Woods</span>
-	      	</div>
-	      	<div class="maroon-square-shows">
-	      		<span class="shows-text" style="line-height:115px; margin-left: 5%; font-size: 100%; color: white;">MAY</span>
-	      		<span class="shows-text" style="line-height:115px; font-size: 150%; font-weight:bold; color: white;">2</span>
-	      		<span class="shows-text" style="line-height:115px; font-size: 150%; font-weight: bold; color: white; margin-left: 2%;">San Francisco,CA</span> 
-	    		<span class="shows-text" style="line-height:115px; margin-left: 2%; font-size: 150%; font-style: italic; color: #8C838E;">Neck of the Woods</span>
-	      	</div>
-	      	<div class="green-square-shows">
-	      		<span class="shows-text" style="line-height:115px; margin-left: 5%; font-size: 100%; color: white;">JUN</span>
-	      		<span class="shows-text" style="line-height:115px; font-size: 150%; font-weight:bold; color: white;">12</span>
-	      		<span class="shows-text" style="line-height:115px; font-size: 150%; font-weight: bold; color: white; margin-left: 2%;">San Francisco,CA</span> 
-	    		<span class="shows-text" style="line-height:115px; margin-left: 2%; font-size: 150%; font-style: italic; color: #8C838E;">Neck of the Woods</span>
-	      	</div>
-	      	<div class="blue-square-shows">
-	      		<span class="shows-text" style="line-height:115px; margin-left: 5%; font-size: 100%; color: white;">AUG</span>
-	      		<span class="shows-text" style="line-height:115px; font-size: 150%; font-weight:bold; color: white;">7</span>
-	      		<span class="shows-text" style="line-height:115px; font-size: 150%; font-weight: bold; color: white; margin-left: 2%;">San Francisco,CA</span> 
-	    		<span class="shows-text" style="line-height:115px; margin-left: 2%; font-size: 150%; font-style: italic; color: #8C838E;">Neck of the Woods</span>
-	      	</div>
-	      </a>
-	      <a href="">
-	      	<div class="pink-square-shows">
-	      		<span class="shows-text" style="line-height:115px; margin-left: 5%; font-size: 100%; color: white;">OCT</span>
-	      		<span class="shows-text" style="line-height:115px; font-size: 150%; font-weight:bold; color: white;">10</span>
-	      		<span class="shows-text" style="line-height:115px; font-size: 150%; font-weight: bold; color: white; margin-left: 2%;">San Francisco,CA</span> 
-	    		<span class="shows-text" style="line-height:115px; margin-left: 2%; font-size: 150%; font-style: italic; color: #8C838E;">Neck of the Woods</span>
-	      	</div>
-	      </a>
-	      <a href="">
-	      	<div class="green-square-shows">
-	      		<span class="shows-text" style="line-height:115px; margin-left: 5%; font-size: 100%; color: white;">NOV</span>
-	      		<span class="shows-text" style="line-height:115px; font-size: 150%; font-weight:bold; color: white;">16</span>
-	      		<span class="shows-text" style="line-height:115px; font-size: 150%; font-weight: bold; color: white; margin-left: 2%;">San Francisco,CA</span> 
-	    		<span class="shows-text" style="line-height:115px; margin-left: 2%; font-size: 150%; font-style: italic; color: #8C838E;">Neck of the Woods</span>
-	      	</div>
-	      </a>
-	    </div>
-	  </div>  
-	</div>
-</section>
-
-<!-- *********************************Contact****************************** -->
-
-<div class="contact-bar" id="contact">
-	<h3 class="text-center"><span class="contact-text"> Contact </span></h3>
-</div>
-
-  <div class="email-form row" style="margin: 0px; padding: 0px;">
-    <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
-		<h5 style="color: white; font-weight: bold; text-align:center; margin-top: 8%;"> CONTACT JORDAN </h5>
-    	<hr style="border: 1px solid gray;">
-
-		<form class="text-center" id="my_form" onsubmit="submitForm(); return false;">
-		  <label class="text-left" for="name" style="color: white; margin: 3% 0 0 3%;"> NAME <span style="color:red"> * </span> </label><br>
-		  <p><input cols="40" id="n" placeholder="Name" style="width: 50%; margin-left:3%;" required></p>
-
-		  <label class="text-left" for="email" style="color: white; margin: 3% 0 0 3%;"> EMAIL <span style="color:red"> * </span> </label><br>
-		  <p><input cols="40" id="e" placeholder="Email Address" type="email" style="width: 50%; margin-left:3%;" required></p><br>
-
-		  <label for="comment" style="color: white; margin-left:3%;"> MESSAGE <span style="color: red;"> * </span> </label><br><textarea  rows="5" cols="40" id="m" placeholder="write your message here" rows="10" style="margin-left:3%;" required></textarea>
-		  <p class="submitButton" style="margin: 10px 0 15px 0;"><input id="mybtn" class="btn btn-danger btn-sm" type="submit" value="Submit Form" style="margin-left:3%;"> <span id="status"></span></p>
-		</form>
-	</div>
-
-	<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
-		<img style="float:right; margin-top: 7%; border-radius: 5px;" class="img-responsive" src="img/contact_image.jpg">
-	</div>
- </div>
-
- <footer style="position: relative; bottom: 5px; height: 70px; background-color: black; border-top: 1px solid #7B2A3B;">
-	 <ul class="social-icons text-center" style="line-height: 80px;">
-		<a href="https://open.spotify.com/artist/32ZD69vCbq2sctfs9JBVN8" target="_blank"><li><i class="fa fa-spotify" style="font-size: 225%;"></i></li></a>
-		<a href="https://www.youtube.com/user/jordanarcemusic/videos" target="_blank"><li><i class="fa fa-youtube" style="font-size: 225%;"></i></li></a>
-		<a href="https://www.instagram.com/i.jordanphotography/" target="_blank"><li><i class="fa fa-instagram" style="font-size: 225%;"></i></li></a>
-		<a href=""><li><i class="fa fa-twitter" style="font-size: 225%;"></i></li></a>
-	</ul>
- </footer>
+</script>
 
 <script src="js/responsiveslides.min.js"></script>
 <script src="js/main.js"></script>
