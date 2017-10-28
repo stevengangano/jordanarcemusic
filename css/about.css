@@ -35,7 +35,7 @@ img.bg {
 }
 
 .about-me {
-	padding: 25px 30px;
+	padding: -20px 30px 25px 30px;
 	border-top: 2px solid #7B2A3B;
 	border-bottom: 2px solid #7B2A3B;
 	background-color: #1F1F22;
