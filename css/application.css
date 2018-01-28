@@ -398,7 +398,7 @@ header ul li {
   text-align: center;
   color: #CCCCCC; }
 
-.fa.fa-soundcloud,
+.fa.fa-soundcloud.player,
 .fa.fa-spotify.player {
   font-size: 45px;
   padding-top: 5px; }
@@ -635,10 +635,10 @@ footer {
   margin: 0 15px;
   display: inline-block; }
 
+.fa.fa-soundcloud.footer,
 .fa.fa-spotify.footer,
 .fa.fa-youtube.footer,
-.fa.fa-instagram.footer,
-.fa.fa-twitter.footer {
+.fa.fa-instagram.footer {
   font-size: 225%; }
 
 /*Overidden bootstrap styles*/

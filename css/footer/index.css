@@ -13,10 +13,10 @@ footer {
   margin: 0 15px;
   display: inline-block; }
 
+.fa.fa-soundcloud.footer,
 .fa.fa-spotify.footer,
 .fa.fa-youtube.footer,
-.fa.fa-instagram.footer,
-.fa.fa-twitter.footer {
+.fa.fa-instagram.footer {
   font-size: 225%; }
 
 /*# sourceMappingURL=index.css.map */
