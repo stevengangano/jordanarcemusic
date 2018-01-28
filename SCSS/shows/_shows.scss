@@ -28,7 +28,7 @@
   color: white;
 }
 
-.shows-day {
+.shows-day { 
   line-height:115px; 
   font-size: 150%; 
   font-weight:bold; 
@@ -99,4 +99,8 @@
 .blue-square-shows:hover,
 .purple-square-shows:hover {
   border: 1px solid white;
+}
+
+.showing {
+  display: none;
 }
